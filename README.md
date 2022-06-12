@@ -18,3 +18,4 @@ To have a freestanding version of the application.  To build the code for produc
 
 `npm run prod`
 
+This code is changed slightly from regular Vue projects as the code is compiled as a library and put into the js folder. This also includes some css for the auto-complete - but I'm not changing the name. It is bundled with the Vue library so it's not necessary to include on the page. If using more than one Vue library, I would suggest removing the --inline-vue option in the 'build' command in package.json.
