@@ -4,7 +4,7 @@
     <address-auto-complete class="auto-complete" v-on:selected="setAddress"></address-auto-complete>
     <sub>Just the street number and street name, eg: 1 Portage</sub>
     <div v-if="address" class="results">
-      <h3>Candidates For {{address}}:</h3>
+      <h4>Candidates For {{address}}: <a @click="clear">(clear)</a></h4>
       <ul>
         <li><a href="/constituencies/mayoral-candidates/"><b>Mayoral</b> Candidates</a></li>
         <li><a :href="council_ward_url"><b>{{ ward }} City Council</b> Candidates</a></li>
@@ -33,8 +33,29 @@ export default {
     }
   },
 
+  created() {
+    if (localStorage && localStorage.results) {
+      console.log(localStorage);
+      this.setAddress(JSON.parse(localStorage.results));
+    }
+  },
+
   methods: {
+    clear() {
+      if (localStorage && localStorage.results) {
+        localStorage.clear();
+      }
+      this.address = null;
+      this.ward = null;
+      this.school_division_ward = null;
+      this.school_division = null;
+      this.selected_results = null;
+    },
+
     setAddress(data) {
+      if (localStorage) {
+        localStorage.setItem("results",JSON.stringify(data));
+      }
       this.ward = data.ward;
       this.school_division = data.school_division;
       this.school_division_ward = data.school_division_ward;
@@ -97,6 +118,9 @@ export default {
 </script>
 
 <style scoped>
+  a {
+    cursor: pointer;
+  }
   div.results {
     text-align: left;
   }
