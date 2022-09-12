@@ -17763,12 +17763,12 @@ function Appvue_type_template_id_070ddded_scoped_true_render(_ctx, _cache, $prop
 }
 ;// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=070ddded&scoped=true
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/AddressAutoComplete.vue?vue&type=template&id=3aa33481
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/AddressAutoComplete.vue?vue&type=template&id=fcf96ab4
 
 
-const AddressAutoCompletevue_type_template_id_3aa33481_hoisted_1 = /*#__PURE__*/createTextVNode("No addresses found.");
+const AddressAutoCompletevue_type_template_id_fcf96ab4_hoisted_1 = /*#__PURE__*/createTextVNode("No addresses found.");
 
-function AddressAutoCompletevue_type_template_id_3aa33481_render(_ctx, _cache, $props, $setup, $data, $options) {
+function AddressAutoCompletevue_type_template_id_fcf96ab4_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_multiselect = resolveComponent("multiselect");
 
   return openBlock(), createElementBlock("div", null, [runtime_core_esm_bundler_createVNode(_component_multiselect, {
@@ -17786,7 +17786,7 @@ function AddressAutoCompletevue_type_template_id_3aa33481_render(_ctx, _cache, $
     onSelect: $options.selectAddress,
     onSearchChange: $options.addressChanged
   }, {
-    noResult: withCtx(() => [AddressAutoCompletevue_type_template_id_3aa33481_hoisted_1]),
+    noResult: withCtx(() => [AddressAutoCompletevue_type_template_id_fcf96ab4_hoisted_1]),
     _: 1
   }, 8, ["modelValue", "options", "loading", "onSelect", "onSearchChange"])]);
 }
@@ -19172,7 +19172,8 @@ const JSON_URL = 'https://data.winnipeg.ca/resource/cam2-ii3u.json';
         school_division_ward: address.school_division_ward,
         ward: address.ward_as_of_september_17,
         street_number: address.street_number,
-        street_name: address.street_name
+        street_name: address.street_name,
+        street_direction: address.street_direction ? ' ' + address.street_direction : ''
       };
       this.$emit('selected', obj);
     },
@@ -19189,6 +19190,7 @@ const JSON_URL = 'https://data.winnipeg.ca/resource/cam2-ii3u.json';
       if (return_obj.data) {
         this.options = return_obj.data.map(row => {
           row.display_address = `${row.street_number} ${row.street_name} ${row.street_type}`;
+          row.display_address += row.street_direction ? ' ' + row.street_direction : '';
           return row;
         });
       }
@@ -19242,7 +19244,7 @@ var exportHelper = __webpack_require__(89);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.Z)(AddressAutoCompletevue_type_script_lang_js, [['render',AddressAutoCompletevue_type_template_id_3aa33481_render]])
+const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.Z)(AddressAutoCompletevue_type_script_lang_js, [['render',AddressAutoCompletevue_type_template_id_fcf96ab4_render]])
 
 /* harmony default export */ var AddressAutoComplete = (__exports__);
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/App.vue?vue&type=script&lang=js

@@ -46,6 +46,7 @@ export default {
         ward: address.ward_as_of_september_17,
         street_number: address.street_number,
         street_name: address.street_name,
+        street_direction: (address.street_direction) ? ' ' + address.street_direction : '',
       }
       this.$emit('selected',obj);
     },
@@ -62,6 +63,7 @@ export default {
       if (return_obj.data) {
         this.options = return_obj.data.map(row => {
           row.display_address = `${row.street_number} ${row.street_name} ${row.street_type}`;
+          row.display_address += (row.street_direction) ? ' ' + row.street_direction : '';
           return row;
         })
       }
