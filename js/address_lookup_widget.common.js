@@ -17721,10 +17721,10 @@ const initDirectivesForSSR = () => {
 };
 
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/App.vue?vue&type=template&id=070ddded&scoped=true
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/App.vue?vue&type=template&id=65c11a0c&scoped=true
 
 
-const _withScopeId = n => (pushScopeId("data-v-070ddded"), n = n(), popScopeId(), n);
+const _withScopeId = n => (pushScopeId("data-v-65c11a0c"), n = n(), popScopeId(), n);
 
 const _hoisted_1 = /*#__PURE__*/_withScopeId(() => /*#__PURE__*/createBaseVNode("h3", null, "Enter your street address below to find the candidates you will be voting for.", -1));
 
@@ -17747,7 +17747,7 @@ const _hoisted_7 = ["href"];
 
 const _hoisted_8 = /*#__PURE__*/createTextVNode(" Candidates");
 
-function Appvue_type_template_id_070ddded_scoped_true_render(_ctx, _cache, $props, $setup, $data, $options) {
+function Appvue_type_template_id_65c11a0c_scoped_true_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_address_auto_complete = resolveComponent("address-auto-complete");
 
   return openBlock(), createElementBlock("div", null, [_hoisted_1, runtime_core_esm_bundler_createVNode(_component_address_auto_complete, {
@@ -17761,7 +17761,7 @@ function Appvue_type_template_id_070ddded_scoped_true_render(_ctx, _cache, $prop
     href: $options.trustee_ward_url
   }, [createBaseVNode("b", null, toDisplayString($data.school_division) + " " + toDisplayString($data.school_division_ward) + " School Trustee", 1), _hoisted_8], 8, _hoisted_7)])])])) : createCommentVNode("", true)]);
 }
-;// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=070ddded&scoped=true
+;// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=65c11a0c&scoped=true
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/AddressAutoComplete.vue?vue&type=template&id=fcf96ab4
 
@@ -19322,32 +19322,32 @@ const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.Z)(AddressAutoComp
 
     trustee_ward_url() {
       const ward_map = {
-        'Louis Riel 3': '/constituencies/louis-riel-3/',
-        'River East Transcona 3': '/constituencies/river-east-transcona-3/',
-        'Pembina Trails 1': '/constituencies/pembina-trails-1/',
-        'River East Transcona 2': '/constituencies/river-east-transcona-2/',
-        'River East Transcona 1': '/constituencies/river-east-transcona-1/',
-        'Winnipeg 6': '/constituencies/winnipeg-6/',
-        'St James-Assiniboia Silver Heights-Booth': '/constituencies/st-james-assiniboia-silver-heights-booth/',
-        'Pembina Trails 3': '/constituencies/pembina-trails-3/',
-        'Seven Oaks 3': '/constituencies/seven-oaks-3/',
-        'Louis Riel 1': '/constituencies/louis-riel-1/',
-        'River East Transcona 4': '/constituencies/river-east-transcona-4/',
-        'Winnipeg 8': '/constituencies/winnipeg-8/',
-        'St James-Assiniboia Kirkfield-St Charles': '/constituencies/st-james-assiniboia-kirkfield-st-charles/',
-        'Winnipeg 9': '/constituencies/winnipeg-9/',
-        'Louis Riel 4': '/constituencies/louis-riel-4/',
-        'Winnipeg 7': '/constituencies/winnipeg-7/',
-        'St James-Assiniboia King Edward-Deer Lodge': '/constituencies/st-james-assiniboia-king-edward-deer-lodge/',
-        'Pembina Trails 2': '/constituencies/pembina-trails-2/',
-        'Winnipeg 1': '/constituencies/winnipeg-1/',
-        'Seven Oaks 2': '/constituencies/seven-oaks-2/',
-        'Winnipeg 5': '/constituencies/winnipeg-5/',
-        'Louis Riel 2': '/constituencies/louis-riel-2/',
-        'Winnipeg 3': '/constituencies/winnipeg-3/',
-        'Seine River ': '/constituencies/seine-river-1/',
-        'Winnipeg 2': '/constituencies/winnipeg-2/',
-        'Winnipeg 4': '/constituencies/winnipeg-4/'
+        'Louis Riel 3': 'https://www.winnipegelection.ca/constituencies/louis-riel-3/',
+        'River East - Transcona 3': 'https://www.winnipegelection.ca/constituencies/river-east-transcona-3/',
+        'Pembina Trails 1': 'https://www.winnipegelection.ca/constituencies/pembina-trails-1/',
+        'River East - Transcona 2': 'https://www.winnipegelection.ca/constituencies/river-east-transcona-2/',
+        'River East - Transcona 1': 'https://www.winnipegelection.ca/constituencies/river-east-transcona-1/',
+        'Winnipeg 6': 'https://www.winnipegelection.ca/constituencies/winnipeg-6/',
+        'St James-Assiniboia Centre Ward': 'https://www.winnipegelection.ca/constituencies/st-james-assiniboia-centre-ward/',
+        'Pembina Trails 3': 'https://www.winnipegelection.ca/constituencies/pembina-trails-3/',
+        'Seven Oaks 3': 'https://www.winnipegelection.ca/constituencies/seven-oaks-3/',
+        'Louis Riel 1': 'https://www.winnipegelection.ca/constituencies/louis-riel-1/',
+        'River East - Transcona 4': 'https://www.winnipegelection.ca/constituencies/river-east-transcona-4/',
+        'Winnipeg 8': 'https://www.winnipegelection.ca/constituencies/winnipeg-8/',
+        'St James-Assiniboia West Ward': 'https://www.winnipegelection.ca/constituencies/st-james-assiniboia-west-ward/',
+        'Winnipeg 9': 'https://www.winnipegelection.ca/constituencies/winnipeg-9/',
+        'Louis Riel 4': 'https://www.winnipegelection.ca/constituencies/louis-riel-4/',
+        'Winnipeg 7': 'https://www.winnipegelection.ca/constituencies/winnipeg-7/',
+        'St James-Assiniboia East Ward': 'https://www.winnipegelection.ca/constituencies/st-james-assiniboia-east-ward/',
+        'Pembina Trails 2': 'https://www.winnipegelection.ca/constituencies/pembina-trails-2/',
+        'Winnipeg 1': 'https://www.winnipegelection.ca/constituencies/winnipeg-1/',
+        'Seven Oaks 2': 'https://www.winnipegelection.ca/constituencies/seven-oaks-2/',
+        'Winnipeg 5': 'https://www.winnipegelection.ca/constituencies/winnipeg-5/',
+        'Louis Riel 2': 'https://www.winnipegelection.ca/constituencies/louis-riel-2/',
+        'Winnipeg 3': 'https://www.winnipegelection.ca/constituencies/winnipeg-3/',
+        'Seine River ': 'https://www.winnipegelection.ca/constituencies/seine-river-1/',
+        'Winnipeg 2': 'https://www.winnipegelection.ca/constituencies/winnipeg-2/',
+        'Winnipeg 4': 'https://www.winnipegelection.ca/constituencies/winnipeg-4/'
       };
       return ward_map[`${this.school_division} ${this.school_division_ward}`];
     }
@@ -19356,10 +19356,10 @@ const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.Z)(AddressAutoComp
 });
 ;// CONCATENATED MODULE: ./src/App.vue?vue&type=script&lang=js
  
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/App.vue?vue&type=style&index=0&id=070ddded&scoped=true&lang=css
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/App.vue?vue&type=style&index=0&id=65c11a0c&scoped=true&lang=css
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/App.vue?vue&type=style&index=0&id=070ddded&scoped=true&lang=css
+;// CONCATENATED MODULE: ./src/App.vue?vue&type=style&index=0&id=65c11a0c&scoped=true&lang=css
 
 ;// CONCATENATED MODULE: ./src/App.vue
 
@@ -19369,7 +19369,7 @@ const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.Z)(AddressAutoComp
 ;
 
 
-const App_exports_ = /*#__PURE__*/(0,exportHelper/* default */.Z)(Appvue_type_script_lang_js, [['render',Appvue_type_template_id_070ddded_scoped_true_render],['__scopeId',"data-v-070ddded"]])
+const App_exports_ = /*#__PURE__*/(0,exportHelper/* default */.Z)(Appvue_type_script_lang_js, [['render',Appvue_type_template_id_65c11a0c_scoped_true_render],['__scopeId',"data-v-65c11a0c"]])
 
 /* harmony default export */ var App = (App_exports_);
 ;// CONCATENATED MODULE: ./src/main.js
