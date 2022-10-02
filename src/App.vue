@@ -1,16 +1,16 @@
 <template>
   <div>
-    <h3>Enter your street address below to find the candidates you will be voting for.</h3>
+    <h1>Search Your Address to Find Your Candidates</h1>
     <address-auto-complete class="auto-complete" v-on:selected="setAddress"></address-auto-complete>
-    <sub>Just the street number and street name, eg: 1 Portage</sub>
     <div v-if="address" class="results">
-      <h4>Candidates For {{address}}: <a @click="clear">(clear)</a></h4>
+      <h2>Candidates For <span class="yes">{{address}}</span> <a @click="clear">(clear)</a></h2>
       <ul>
         <li><a href="/constituencies/mayoral-candidates/"><b>Mayoral</b> Candidates</a></li>
         <li><a :href="council_ward_url"><b>{{ ward }} City Council</b> Candidates</a></li>
         <li><a :href="trustee_ward_url"><b>{{ school_division }} {{school_division_ward }} School Trustee</b> Candidates</a></li>
       </ul>
     </div>
+    <sub v-else><b>Address Not Found?</b> Please don't include street type (st, pl, dr, street, place, etc). &nbsp; <b class="yes">Correct Search:</b> 1 Portage &nbsp; <b class="no">Incorrect Search:</b> 1 Portage <span class="no">Ave</span></sub>
   </div>
 </template>
 
@@ -126,6 +126,7 @@ export default {
   }
   .auto-complete {
     margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
   .results {
     margin-top: 1.5rem;
@@ -133,8 +134,29 @@ export default {
 
   ul li {
     margin-left: 1rem;
-    margin-top: 0.8rem;
-    line-height: 1.2rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+
+  .yes {
+    color: green;
+  }
+
+  b.no {
+    color: #bb4040;
+  }
+
+  span.no {
+    border-bottom: 2px solid #bb4040;
+  }
+
+  sub {
+    line-height: 1.4;
+  }
+
+  h1, h2 {
+    margin-left: 0;
   }
 
 </style>

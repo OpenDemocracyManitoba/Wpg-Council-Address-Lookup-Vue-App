@@ -6,7 +6,7 @@
       :searchable="true"
       :close-on-select="true"
       :clear-on-select="false"
-      placeholder="Type a Winnipeg street and address"
+      placeholder="Enter your street number and name."
       :loading="isLoading"
       label="display_address"
       name="display_address"
