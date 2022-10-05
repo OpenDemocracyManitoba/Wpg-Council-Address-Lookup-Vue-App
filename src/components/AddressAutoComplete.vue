@@ -8,8 +8,8 @@
       :clear-on-select="false"
       placeholder="Enter your street number and name."
       :loading="isLoading"
-      label="search_address"
-      name="display_address"
+      label="display_address"
+      :internalSearch="false"
       :preserveSearch="true"
       @select="selectAddress"
       @search-change="addressChanged">
@@ -62,18 +62,10 @@ export default {
       let return_obj = await axios.get(api_url);
       if (return_obj.data) {
         this.options = return_obj.data.map(row => {
-          row.display_address = `${row.street_number} ${row.street_name} ${row.street_type}`;
+          row.display_address = `${row.street_number} ${row.street_name}`;
+          row.display_address += (row.street_type) ? ' ' + row.street_type : '';
           row.display_address += (row.street_direction) ? ' ' + row.street_direction : '';
-          //search address is so the auto-complete finds the things they've typed
-          row.search_address = '';
-          if (this.suite_number) {
-            row.search_address += this.suite_number;
-          }
-          row.search_address += `${row.street_number} ${row.street_name}`;
-          if (this.street_type_converted) {
-            //converted caught that its a valid street type, but put in whta they've actually typed so it catches in the autocomplete filter
-            row.search_address += ` ${this.street_type}`
-          }
+
           return row;
         })
       }

@@ -35,7 +35,6 @@ export default {
 
   created() {
     if (localStorage && localStorage.results) {
-      console.log(localStorage);
       this.setAddress(JSON.parse(localStorage.results));
     }
   },
